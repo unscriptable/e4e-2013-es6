@@ -14,9 +14,9 @@
 
 ### John Hann [@unscriptable](https://github.com/unscriptable)
 
-* Co-founder of [cujoJS](http://cujojs.com/)
+* Javascript barbarian
+* Co-founder of [cujoJS](http://cujojs.com/), the <br/>Javascript Architectural Toolkit
 * Engineer at [SpringSource](http://http://springsource.org/) / [Pivotal](http://gopivotal.com/)
-* Javascript barbarian everywhere else as [@unscriptable](http://twitter.com/unscriptable)
 
 
 
@@ -100,10 +100,10 @@ module "kung/fu" {
 
 ## ES6 Module basics
 
-* Module names are just string literals
+* Module ids are just string literals
 	* realistically, they should be compatible with file names and urls
-* Zero or more imports: `import { names } from name;`
-* Zero or more exports: `export thing;`
+* Zero or more imports: <br/>`import { <names> } from "<id>";`
+* Zero or more exports: <br/>`export <expression>;`
 
 ----------------------------------------
 
@@ -233,7 +233,7 @@ import { ???? } from "fu";
 
 ----------------------------------------
 
-<a style="float:right" href="http://www.flickr.com/photos/unscriptable/8618726629/" title="Screen Shot 2013-04-04 at 12.05.31 PM by unscriptable, on Flickr"><img src="http://farm9.staticflickr.com/8537/8618726629_3f54f5ebc6.jpg" width="680" alt="Screen Shot 2013-04-04 at 12.05.31 PM"></a>
+<a style="float:right" href="http://www.flickr.com/photos/unscriptable/8618726629/" title="Screen Shot 2013-04-04 at 12.05.31 PM by unscriptable, on Flickr"><img src="images/twitter-convo.jpeg" width="680" alt="Screen Shot 2013-04-04 at 12.05.31 PM"></a>
 
 ## Export one thing
 
@@ -268,7 +268,7 @@ export kungfu;
 ### "script" versus "module"
 
 * Script elements expect global code (aka "scripts")
-	* Any modules must be wrapped in `module "id" { /*...*/ }`!
+	* Any modules must be wrapped: <br/> `module "id" { /*...*/ }`!
 	* `export` in a script will likely throw a SyntaxError
 * Module loaders expect a single module (except when bundled)
 	* The spec says that single modules should omit the wrapper!
@@ -326,6 +326,12 @@ AMD uses a similar form.
 
 ### Loader pipeline
 
+* Normalize
+* Resolve
+* Fetch
+* Translate
+* Link
+
 (I stole this image from [@wycats](https://gist.github.com/wycats/51c96e3adcdb3a68cbc3)!)
 
 
@@ -358,10 +364,7 @@ System.load("app/main",
 ## The `Loader` constructor
 
 ```js
-var parent, loader;
-
-parent = System;
-loader = new Loader(parent, {
+var loader = new Loader(System, {
 	global: window,
 	baseURL: '../client/',
 	linkedTo: null, // set the fundamental intrinsics of the modules
@@ -414,10 +417,8 @@ Warning: The specs for these are volatile!
 Each of the steps in the pipeline can be extended by "advising" the methods:
 
 ```js
-var loader, origResolve;
-
-loader = new Loader();
-origResolve = loader.resolve;
+var loader = new Loader();
+var origResolve = loader.resolve;
 
 loader.resolve = function (moduleId, options) {
 	if ('node' == options.type) {
@@ -450,7 +451,7 @@ Bundling is also similar to AMD:
 
 * Process each module
 	* Perform id normalization step (optional)
-	* Wrap in `module "<path/id>" { <body> };`
+	* Wrap: <br/>`module "<path/id>" { <body> };`
 * Concatenate into a file (order is not important!)
 * Prepend the loader configuration / customization code
 
