@@ -16,6 +16,7 @@
 
 * Javascript barbarian
 * Co-founder of [cujoJS](http://cujojs.com/), the <br/>Javascript Architectural Toolkit
+	* wire, when, curl, cram, meld, msgs, rest, cola, poly, seed ...
 * Engineer at [SpringSource](http://http://springsource.org/) / [Pivotal](http://gopivotal.com/)
 
 
@@ -33,6 +34,11 @@
 ### *Who knows something about Javascript modules?*
 
 o |o \o o o| \o o |o o/ \o
+
+
+----------------------------------------
+
+# Why Modules?
 
 
 ----------------------------------------
