@@ -260,9 +260,9 @@ export default function (word) {
 ```js
 // file "kung/fu.js"
 // slightly different import syntax
-import fuify from "foo";
+import fuify from "fu";
 var kungfu;
-kungfu = tofu('kung');
+kungfu = fuify('kung');
 export kungfu;
 ```
 
