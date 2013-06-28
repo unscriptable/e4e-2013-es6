@@ -1,4 +1,4 @@
-define(['js!highlightjs!exports=hljs'], function(hljs) {
+define(function() {
 	return function(text, lang) {
 		var result;
 

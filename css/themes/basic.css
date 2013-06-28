@@ -35,6 +35,8 @@ em {
 
 pre code {
     background-color: transparent;
+	font-size: 85%;
+	word-wrap: normal;
 }
 
 .slide h1, .slide h2, .slide h3, .slide h4, .slide h5 {
@@ -106,12 +108,12 @@ pre code {
 		font-size: 100%;
 		min-height: auto;
 	}
-	
+
 	.slide-view-module {
 		min-width: 0;
 		min-height: 0;
 	}
-	
+
 	footer {
 		margin-top: 2em;
 		min-width: 0;

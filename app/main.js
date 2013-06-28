@@ -18,14 +18,20 @@ define([
 		var source, model, view, controller, splitSlides;
 
 		splitSlides = /\s*\<hr\s*\/?\>\s*/i;
-		source = compose(fetch(require), split(splitSlides));
+		source = compose(fetch(require), markdown({ highlight: highlighter, langPrefix: 'language-' }), split(splitSlides));
 
-		model = new Model(source('slides/slides.html'));
+		model = new Model(source('content'));
 		view = new View(document.getElementById('slide-container'), model);
 		controller = new Controller(view);
 
 		controller.start().then(function () {
 			document.body.className = '';
 		});
+
+		function highlighter (source) {
+			// actionscript seem to look the best (import keyword)
+			return highlight(source, 'actionscript');
+		}
+
 	}
 );

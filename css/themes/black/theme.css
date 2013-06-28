@@ -48,16 +48,22 @@ footer p {
 .slide h2 {
 	color: #ccc;
 	margin-top: 0;
-	margin-left: .5em;
 }
 
 .slide p {
 	color: #eee;
-	margin-left: 2em;
 }
 
 .slide em {
 	font-style: italic;
+	color: #ffc;
+}
+
+.slide code {
+	color: #adf;
+}
+
+.slide pre code {
 	color: #fff;
 }
 
@@ -98,7 +104,7 @@ footer p {
 	.slide {
 		font-size: 90%;
 	}
-	
+
 	.slide-container {
 		margin-top: 1em;
 	}
@@ -106,12 +112,12 @@ footer p {
 	.slide .slide-layout-title {
 		padding-top: 0;
 	}
-	
+
 	.slide p {
 		font-size: 1.25em;
 		margin-left: .25em;
 	}
-	
+
 	.slide h2 {
 		margin-left: .25em;
 	}
