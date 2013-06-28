@@ -857,7 +857,7 @@ Current spec: http://wiki.ecmascript.org/doku.php?id=harmony:modules
 
 Current examples: http://wiki.ecmascript.org/doku.php?id=harmony:modules_examples
 
-This presentation: 
+This presentation: https://github.com/unscriptable/e4e-2013-es6
 
 # Questions?
 
