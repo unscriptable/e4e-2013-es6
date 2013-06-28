@@ -12,6 +12,7 @@ You can read more about it in [this presentation, made with the framework.](http
 	- You may want to open index.html in your browser to read a bit more about the framework.
 1. Put the content for all your slides in slides/slides.html
 	- There are example slides there now, so just follow the format.
+1. run `bower install` and a local web server (we like [serv](https://npmjs.org/package/serv))
 1. Open index.html in your browser!
 
 ### Not-so-quick start
