@@ -30,10 +30,16 @@
 
 ## Show of hands
 
-> Who knows something about Javascript modules?
+### *Who knows something about Javascript modules?*
 
 o |o \o o o| \o o |o o/ \o
 
+
+----------------------------------------
+
+## Disruptive technology?
+
+<img src="images/marconi-clifden.jpeg" width="90%"/>
 
 ----------------------------------------
 
@@ -161,9 +167,9 @@ export kungfu;
 
 ## Export one thing
 
-### "Why can't we export just a function or constructor?"
+### *"Why can't we export just a function or constructor?"*
 
-### "Why do we always have to export a "bag" of properties?"
+### *"Why do we always have to export a "bag" of properties?"*
 
 (In a pure ES6 world, this might not matter much, but in a mixed world with
 CommonJS and AMD modules, it gets messy.)
@@ -217,7 +223,7 @@ module.exports = fuify('kung');
 
 ## Export one thing
 
-> How do we import an AMD or CommonJS function-module in ES6?
+### *"How do we import an AMD or CommonJS function-module in ES6?"*
 
 ```js
 // how do we refer to the function-module?
@@ -295,7 +301,7 @@ AMD uses a similar form.
 
 ## Module semantics
 
-### What about loader plugins?
+### *"What about loader plugins?"*
 
 `s/loader plugins/loader extensions`
 
@@ -304,7 +310,7 @@ AMD uses a similar form.
 
 ## Module loaders
 
-### "Why do I care?"
+### *"Why do I care?"*
 
 * Dynamically load chunks of an app
 * Load non-ES6 modules and text-based resources
@@ -314,13 +320,13 @@ AMD uses a similar form.
 
 ----------------------------------------
 
+<img src="images/loader-pipeline.png" style="float:right" height="700"/>
+
 ## Module loaders
 
 ### Loader pipeline
 
-<img src="http://cl.ly/image/0d2P3j2t2b0s/Pasted_Image_3_10_13_5_16_PM.png"/>
-
-(I also stole this image from [@wycats](https://gist.github.com/wycats/51c96e3adcdb3a68cbc3)!)
+(I stole this image from [@wycats](https://gist.github.com/wycats/51c96e3adcdb3a68cbc3)!)
 
 
 
@@ -453,11 +459,11 @@ Bundling is also similar to AMD:
 
 ## Timeline
 
-### "When can we expect to start using ES6 modules?"
+### *"When can we expect to start using ES6 modules?"*
 
 A: Whichever comes later: Fall 2016 or IE6-10 fade away
 
-### "Ugh! Why so far away?"
+### *"Ugh! Why so far away?"*
 
 A: It'll take that long for implementations to work out the kinks and
 performance issues, unfortunately.  Loader specs are still being developed.
@@ -571,6 +577,12 @@ performance issues, unfortunately.  Loader specs are still being developed.
 
 # DEMO TIME!
 
+
+----------------------------------------
+
+<img src="images/dungeon-gate.jpeg" width="680" style="float:right"/>
+
+## AAAARRRRGGHHHHHHH.........
 
 ----------------------------------------
 
