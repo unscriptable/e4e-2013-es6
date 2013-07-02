@@ -878,5 +878,8 @@ Current examples: http://wiki.ecmascript.org/doku.php?id=harmony:modules_example
 
 This presentation: https://github.com/unscriptable/e4e-2013-es6
 
+Me: [@unscriptable](http://twitter/unscriptable)
+/ [cujoJS](http://cujojs.com)
+
 # Questions?
 
