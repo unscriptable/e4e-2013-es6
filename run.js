@@ -10,7 +10,7 @@
 			highlightjs: 'components/highlightjs'
 		},
 		packages: {
-			app: { location: 'app-transpiled', main: 'main', config: { moduleLoader: 'curl/loader/cjsm11' } },
+			app: { location: 'app-transpiled', main: 'main', config: { /*moduleLoader: 'curl/loader/cjsm11'*/ } },
 			curl: { location: 'components/curl/src/curl' },
 			when: { location: 'components/when', main: 'when' },
 			marked: { location: 'components/marked', main: 'lib/marked' }

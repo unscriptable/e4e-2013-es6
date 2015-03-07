@@ -1,8 +1,10 @@
-"use strict";
-var fn = require("when/function");
+define(["when/function"],
+  function(fn) {
+    "use strict";
 
-function compose (tx1, tx2/* ...txs */) {
-	return fn.compose.apply(fn, arguments);
-}
+    function compose (tx1, tx2/* ...txs */) {
+    	return fn.compose.apply(fn, arguments);
+    }
 
-module.exports = compose;
+    return compose;
+  });

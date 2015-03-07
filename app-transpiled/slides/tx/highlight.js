@@ -1,16 +1,19 @@
-"use strict";
-function highlight (text, lang) {
-	var result;
+define([],
+  function() {
+    "use strict";
+    function highlight (text, lang) {
+    	var result;
 
-	try {
-		result = hljs.highlight(lang, text);
-	} catch(e) {
-		result = hljs.highlightAuto(text);
-	}
+    	try {
+    		result = hljs.highlight(lang, text);
+    	} catch(e) {
+    		result = hljs.highlightAuto(text);
+    	}
 
-	return result ? hljs.fixMarkup(result.value, '  ') : text;
+    	return result ? hljs.fixMarkup(result.value, '  ') : text;
 
-}
+    }
 
 
-module.exports = highlight;
+    return highlight;
+  });
